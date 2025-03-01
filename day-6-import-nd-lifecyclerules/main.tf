@@ -5,11 +5,16 @@
     availability_zone = "ap-south-1a"
     tags = {
       Name="Dev-2"
-    } 
+    }
+
+ lifecycle {
+   ignore_changes = [ tags, ]
+ }
 }
 
 
 resource "aws_s3_bucket" "import" {
   
 }
+
 # terraform import aws_s3_bucket.import "swamydevops-123"
