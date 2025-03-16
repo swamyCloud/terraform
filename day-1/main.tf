@@ -1,5 +1,5 @@
 resource "aws_instance" "name" {
-    ami = "ami-0c50b6f7dc3701ddd"
+    ami = "ami-05c179eced2eb9b5b"
     instance_type = "t2.micro"
     key_name = "multicloudwithdevops-2" 
 }
